@@ -1,0 +1,186 @@
+/* General Body Styling */
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Heading */
+h1 {
+  color: #7A1111;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Sub Headings */
+h2 {
+  color: #7A1111;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* Paragraphs */
+p {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Quotes & Blockquotes */
+blockquote, q {
+  font-style: italic;
+  color: #000000;
+  border-left: 4px solid #7A1111;
+  padding-left: 1rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+}
+
+/* Links */
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFD700;
+}
+
+/* Image Styling */
+.image-section img {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Lists */
+ul, ol {
+  text-align: left;
+  max-width: 500px;
+  margin: 1rem auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Table */
+table {
+  margin: 2rem auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+th {
+  background-color: #7A1111;
+}
+
+/* Iframe */
+.media iframe {
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Form Inputs */
+form input, form button {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #7A1111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5A0F0F;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.confess-textarea {
+  width: 100%;
+  max-width: 700px;
+  height: 200px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+  /* Confess Now Button */
+.confess-button {
+  display: inline-block;
+  background-color: #7A1111;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.confess-button:hover {
+  background-color: #5A0F0F;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7A1111;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #FFD1D1;
+}

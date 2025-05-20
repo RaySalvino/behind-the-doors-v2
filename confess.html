@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confess to the Door</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Confess Behind The Doors</h1>
+  <div class="auth-box">
+    <h2>Share Your Confession</h2>
+    <form id="confessionForm">
+      <textarea class="confess-textarea" placeholder="Write your confession here..." name="confession" required></textarea>
+      <input type="text" name="alias" placeholder="Alias (optional)">
+      <button type="submit">Submit Confession</button>
+    </form>
+  </div>
+
+  <div id="confessionsList"></div>
+
+  <footer>
+    <a href="index.html">⬅ Back to Home</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('confessionForm');
+    const list = document.getElementById('confessionsList');
+
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      const confession = form.confession.value;
+      const alias = form.alias.value || "Anonymous";
+      const div = document.createElement('div');
+      div.classList.add('confession');
+      div.innerHTML = `<p><strong>${alias}:</strong> ${confession}</p>`;
+      list.prepend(div);
+      form.reset();
+    };
+  </script>
+
+<body>
+</html>
